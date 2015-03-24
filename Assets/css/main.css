@@ -1,0 +1,71 @@
+body{
+	background-color: #FFFDFF;
+
+
+}
+body:after{
+	content: "";
+	background-image: url("../img/Hexagon-3.jpg");
+	/* opacity: 0.5; */
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	-webkit-filter: opacity(0.3) grayscale(90%) blur(3px);
+	height: 100%;
+}
+.main__nav-bg{
+	min-height: 150px;
+	margin-top: -5px;
+	width: 100%;
+	position: absolute;
+	background-image: url("../img/Hexagon-3.jpg");
+	background-size: 160%;
+	background-position: 100%;
+	-webkit-filter: opacity(1) grayscale(0%) blur(0px);
+}
+.main__nav-border{
+	border-bottom: 1px solid gray;
+	/* background: red; */
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	margin-top: 135px;
+	/* height: 150px; */
+}
+.main__nav{
+	color: white;
+	min-height: 120px;
+
+	top:0px;
+}
+.main__nav h1{
+	font-weight: bold;
+	text-shadow: 0px 0px 6px gray;
+}
+
+.main__nav .dropdown{
+	display: inline;
+}
+/*.main__nav a{
+	color:white;
+	background-color: #0089FF;
+}
+.main__nav a:hover{
+	color: #337ab7 !important;
+}*/
+
+.Modules__Wrapper{
+	word-break:normal;
+}
+.Modules__Wrapper .Module{
+	margin-top: 20px;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0px 0px 10px #979593;
+}
+.Module h3{
+	margin-top: 0px;
+}

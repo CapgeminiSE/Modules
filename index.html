@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Modules</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+
+		<!-- FetchPrint -->
+		<script src="Assets/script/FetchPrint.js" type="text/javascript"></script>
+
+		<script src="Assets/script/script.js" type="text/javascript"></script>
+
+		<link href="Assets/css/main.css" rel="stylesheet"/>
+
+	</head>
+	<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="main__nav-bg"></div>
+			<div class="main__nav-border"></div>
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+
+				<nav class="main__nav">
+					<h1>ADC Modules</h1>
+
+
+
+				<div class="bs-example">
+				    <ul class="nav nav-pills" role="tablist">
+				<!--       <li role="presentation" class="active"><a href="#">Regular link</a></li> -->
+				      <li role="presentation" class="dropdown">
+				        <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+							    Front End Modules
+				          <span class="caret"></span>
+				        </a>
+									  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+									  	<li class=""><a href="#one" tabindex="-1" data-nav="FetchPrintJSONList--Module">FetchPrintJSON as List</a></li>
+									  	<li class=""><a href="#one" tabindex="-1" data-nav="FetchPrintJSONText--Module">FetchPrintJSON as Text</a></li>
+									  </ul>
+				      </li>
+				      <li role="presentation" class="dropdown">
+				        <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+							    Back End Modules
+				          <span class="caret"></span>
+				        </a>
+									  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+										  <li class=""><a href="#one" tabindex="-1" data-nav="BackendModule1--Module">BackendModule1</a></li>
+										  <li class=""><a href="#one" tabindex="-1" data-nav="BackendModule2--Module">BackendModule2</a></li>
+									  </ul>
+				      </li>
+
+						   <li role="presentation" class="ShowAll active"><a href="#">Show All</a></li>
+							   <li role="presentation" class="HideAll active"><a href="#">Hide All</a></li>
+				    </ul>
+				  </div>
+
+
+				</nav>
+			</div>
+			<div class="col-lg-2"></div>
+
+		</div>
+		<div class="row Modules__Wrapper">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+				<!-- MODULE: FetchPrintJSON(from,where,protocol(routine)); -->
+					<div class="Module FetchPrintJSONList--Module">
+						<h3>FetchPrintJSON as List</h3>
+						<div class="FetchPrintJSON">
+						</div>
+					</div>
+
+					<div class="Module FetchPrintJSONText--Module">
+						<h3>FetchPrintJSON as Text</h3>
+						<div class="FetchPrintJSONText">
+						</div>
+					</div>
+
+					<div class="Module  BackendModule1--Module">
+						<h3>BackendModule1</h3>
+						<div class="BackendModule1">
+						</div>
+					</div>
+
+					<div class="Module  BackendModule2--Module">
+						<h3>BackendModule2</h3>
+						<div class="BackendModule2">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2"></div>
+			</div>
+			</div>
+	</div>
+
+	</body>
+</html>
