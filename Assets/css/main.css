@@ -49,13 +49,19 @@ body:after{
 .main__nav .dropdown{
 	display: inline;
 }
-/*.main__nav a{
-	color:white;
-	background-color: #0089FF;
+
+.dropdown-toggle{
+	transition:.3s;
+		border:1px solid #d0d0d0;
+		margin-top: -1px;
+		background: inherit;
 }
-.main__nav a:hover{
+.dropdown-toggle:hover{
+	border:1px solid white;
+	//-webkit-filter: opacity(0.3) grayscale(90%) blur(1px);
+	background: none !important;
 	color: #337ab7 !important;
-}*/
+}
 
 .Modules__Wrapper{
 	word-break:normal;
@@ -63,6 +69,7 @@ body:after{
 .Modules__Wrapper .Module{
 	margin-top: 20px;
 	background-color: white;
+	display: none;
 	padding: 20px;
 	box-shadow: 0px 0px 10px #979593;
 }

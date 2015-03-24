@@ -1,5 +1,7 @@
 # Modules
-Playing lego is fun, simple and effective!
+''Playing lego'' is fun, simple and effective!
+This reffers to the state of development where the majority of the time is taken by developing specific functionality to the specific client or application.
+It also refers to the reuse of modules from earlier applications that fit in new application.
 
 When submitting your code to the modules application, please consider the following:
 

@@ -1,3 +1,26 @@
+/*FetchPrint v1.00
+*
+* Written by: Fredrik Krig 2015-03-24
+* Call
+*/
+function FetchPrint(type,serviceurl,printlocation,routine){
+	try{
+		$.ajax({
+			url: serviceurl,
+			dataType: type,
+			success: function (response) {
+				protocol(routine, printlocation, response);
+			},
+			error: function(response, exception){
+				throw new Error("Error from: "+response+". Errordescription: " + exception);
+			}
+		});
+	}
+
+	catch(e){
+		console.log(e);
+	}
+}
 
 function protocol(string, printlocation, jsonData){
 	try{
@@ -47,22 +70,3 @@ function toStyledArray(obj) {
   return result;
 }
 
-function FetchPrint(type,serviceurl,printlocation,routine){
-	try{
-		//alert(from+where+protocol);
-		$.ajax({
-			url: serviceurl,
-			dataType: type,
-			success: function (response) {
-				protocol(routine, printlocation, response);
-			},
-			error: function(response, exception){
-				throw new Error("Error from: "+response+". Errordescription: " + exception);
-			}
-		});
-	}
-
-	catch(e){
-		console.log(e);
-	}
-}
